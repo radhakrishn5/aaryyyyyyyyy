@@ -1,0 +1,9 @@
+# Example: Command Injection Vulnerability in Python
+
+import os
+
+# Take input from user
+filename = input("Enter a file name to display: ")
+
+# Directly passing user input into system command (DANGEROUS)
+os.system("cat " + filename)
